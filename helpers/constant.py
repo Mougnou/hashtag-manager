@@ -5,7 +5,7 @@ import json
 exe_path = sys.executable
 
 # Get the directory of the executable
-exe_dir = os.path.dirname(exe_path)
+exe_dir = os.path.join(os.path.dirname(sys.argv[0]))
 
 # Define the new directory path
 json_dir = os.path.join(exe_dir, 'json')
